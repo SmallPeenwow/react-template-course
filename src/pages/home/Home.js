@@ -1,7 +1,8 @@
+import { useSelector } from 'react-redux';
 import './Home.scss';
 
 const Home = () => {
-	const name = 'John Doe';
+	const { name } = useSelector((state) => state.data);
 
 	return (
 		<div className='home'>
